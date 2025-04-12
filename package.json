@@ -10,8 +10,14 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dotenv": "^16.5.0",
+    "eslint": "^9.24.0",
     "express": "^5.1.0",
+    "gitignore": "^0.7.0",
     "knex": "^3.1.0",
     "pg": "^8.14.1"
+  },
+  "devDependencies": {
+    "standard": "^17.1.2"
   }
 }
