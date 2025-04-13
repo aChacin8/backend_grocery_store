@@ -1,4 +1,4 @@
-require ('dotenv').config()
+process.loadEnvFile(); //
 // Update with your config settings.
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
