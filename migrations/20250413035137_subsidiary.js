@@ -8,6 +8,7 @@ exports.up = function(knex) {
         return knex.schema.createTable('subsidiary', function(table){
             table.increments('id_subsidiary').primary()
             table.string('address').notNullable()
+            table.string('city').notNullable()
         })
     }
 })
