@@ -3,9 +3,8 @@
  * @returns { Promise<void> }
  */
 exports.seed = async function (knex) {
-  await knex('sales').del();  // Borra los datos actuales
+  await knex('sales').del(); 
   
-  // Inserta nuevos registros de ventas
   await knex('sales').insert([
     { id_users: 1, id_subsidiary_products: 1, sales_price: 12.00, quantity_sales: 5 },
     { id_users: 2, id_subsidiary_products: 2, sales_price: 15.50, quantity_sales: 8 },
