@@ -22,7 +22,7 @@ const findById = (idProduct)=> {
         .where('active', true)
 }
 
-const less15 = () => { //Find all products with price less than 15
+const findLowPrice = () => { //Find all products with price less than 15
     return knex
         .select('*')
         .from ('products')
@@ -30,9 +30,11 @@ const less15 = () => { //Find all products with price less than 15
         .where ('active', true)
 }
 
+
+
 module.exports = {
     create,
     findAll,
     findById,
-    less15
+    findLowPrice
 }
