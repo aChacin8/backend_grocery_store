@@ -4,7 +4,7 @@
  */
 exports.seed = async function (knex) {
   // Borrar datos anteriores
-  await knex('users').del();
+  await knex('users').del()
 
   // Insertar nuevos usuarios
   await knex('users').insert([
@@ -73,5 +73,5 @@ exports.seed = async function (knex) {
       phone: '818-222-3344',
       active: true
     }
-  ]);
-};
+  ])
+}
